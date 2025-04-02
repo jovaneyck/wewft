@@ -15,7 +15,7 @@ public class FeatureToggleManager : IFeatureToggleManager
     }
 
 
-    public Task GetValue(string featureName)
+    public Task<bool> GetValue(string featureName)
     {
         return Task.FromResult(_flags[featureName]);
     }
