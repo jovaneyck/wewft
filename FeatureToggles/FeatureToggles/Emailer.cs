@@ -1,6 +1,11 @@
 ﻿namespace FeatureToggles;
 
-public class Emailer
+public interface IEmailer
+{
+    string GetEmailBody(string customerName);
+}
+
+public class Emailer : IEmailer
 {
     public string GetEmailBody(string customerName)
     {

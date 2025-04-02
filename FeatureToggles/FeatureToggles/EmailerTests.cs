@@ -7,7 +7,7 @@ public class EmailerTests
     [Fact]
     public void SendEmailTest()
     {
-        var emailer = new Emailer();
+        IEmailer emailer = new Emailer();
 
         var emailBody = emailer.GetEmailBody(":customer:name:");
         
