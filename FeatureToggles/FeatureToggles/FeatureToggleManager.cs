@@ -2,7 +2,7 @@
 
 public interface IFeatureToggleManager
 {
-    public Task GetValue(string featureName);
+    public Task<bool> GetValue(string featureName);
 }
 
 public class FeatureToggleManager : IFeatureToggleManager
